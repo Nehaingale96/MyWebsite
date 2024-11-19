@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <style>
+       .custom-width {
+        width: 100%; 
+       }
+       .custom-width button{
+        padding: 10px 40px;
+       }
+       .cart{
+        background-color:darkorange;
+        color: white;
+       }
+       .btn1{
+        background-color:rgb(231, 72, 4);
+       }
+       .para{
+        color: green;
+       }
+       h6{
+        color: black;
+       }
+       a{
+        font-size: 13px;
+       }
+       h3{
+        margin-left: 18px;
+       }
+       .card{
+        margin: 0 auto;
+       }
+       .dropdown-menu{
+        &[data-bs-popper]{
+          right: 0 !important;
+          left: unset !important;
+        }
+      }
+      
+       
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid bg-primary" style="padding: 10px 10px;">
+          <a class="navbar-brand" style="color: white;">Flipkart</a>
+          <!-- <img src="images/flipkart.png" class="img-thumbnail" alt="flipkart" style="width: 100px; "> -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search for Products,Brand & more" aria-label="Search" style="padding: 0px 10px 3px 10px; width: 800px"  >
+            <i class="bi bi-search" style="margin:0px 30px 0px -40px; background-color: white; padding: 5px 15px 0px 15px; border-radius: 8px; "></i>
+            <button class="btn btn-outline-success" type="submit" style="margin-right: 5px; margin-left:-20px; color: white;">Search</button>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  Neha
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">My Profile</button></li>
+                  <li><button class="dropdown-item" type="button">Supercoin zone</button></li>
+                  <li><button class="dropdown-item" type="button">Flipkart plus zone</button></li>
+                  <li><button class="dropdown-item" type="button">Orders</button></li>
+                  <li><button class="dropdown-item" type="button">Wishlist</button></li>
+                  <li><button class="dropdown-item" type="button">Coupons</button></li>
+                  <li><button class="dropdown-item" type="button">Gift cards</button></li>
+                  <li><button class="dropdown-item" type="button">Notifications</button></li>
+                  <li><button class="dropdown-item" type="button">Logout</button></li>
+                </ul>
+            </div>
+            <button type="button" class="btn" style="color: white; "><i class="bi bi-cart-dash"></i>Cart</button>
+            <button type="button" class="btn" style="color: white;">Seller</button>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"  style="margin-right: 70px; color: white;">
+                  Menu
+                </button>
+                <ul class="dropdown-menu" >
+                  <li><button class="dropdown-item" type="button">Notification prefernces</button></li>
+                  <li><button class="dropdown-item" type="button">24 * 7 Customer care</button></li>
+                  <li><button class="dropdown-item" type="button">Advertise </button></li>
+                  <li><button class="dropdown-item" type="button">Download App</button></li>
+                </ul>
+            </div>
+          </form>
+        </div>
+    </nav>   
+    <div class="btn-group" style="margin-left: 215px;">
+        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Mobiles & Accessories
+        </button>
+        <ul class="dropdown-menu" style="width: 200px;">
+        <li><a class="dropdown-item" href="#">Samsung</a></li>
+        <li><a class="dropdown-item" href="#">Oppo</a></li>
+        <li><a class="dropdown-item" href="#">Realme</a></li>
+        <li><a class="dropdown-item" href="#">Vivo</a></li>
+        <li><a class="dropdown-item" href="#">iphone</a></li>
+        <li><a class="dropdown-item" href="#">Poco</a></li>
+        <li><a class="dropdown-item" href="#">Mobile Cases</a></li>
+        <li><a class="dropdown-item" href="#">Headphone</a></li>
+        <li><a class="dropdown-item" href="#">Screenguard</a></li>
+        <li><a class="dropdown-item" href="#">Memory Card</a></li>
+        <li><a class="dropdown-item" href="#">Power Bank</a></li>
+        </ul>
+    </div>
+    <div class="btn-group"></div>
+        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        TV & Appliances
+        </button>
+        <ul class="dropdown-menu" style="width: 200px;">
+        <li><a class="dropdown-item" href="#">Samsung</a></li>
+        <li><a class="dropdown-item" href="#">LG action</a></li>
+        <li><a class="dropdown-item" href="#">Nokia</a></li>
+        <!-- <li><a class="dropdown-item" href="#">MI</a></li> -->
+        <li><a class="dropdown-item" href="#">Washing Machine</a></li>
+        <li><a class="dropdown-item" href="#">Air Conditioner</a></li>
+        <li><a class="dropdown-item" href="#">Single Door Refrigerator</a></li>
+        <li><a class="dropdown-item" href="#">Double Door Refrigerator</a></li>
+        <li><a class="dropdown-item" href="#">Triple Door Refrigerator</a></li>
+        <li><a class="dropdown-item" href="#">Kitchen Appliances</a></li>
+        <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+        </ul>
+    </div>
+    <div class="btn-group"></div>
+        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+       Men
+        </button>
+        <ul class="dropdown-menu" style="width: 200px;" >
+        <li><a class="dropdown-item" href="#">Tshirts</a></li>
+        <li><a class="dropdown-item" href="#">Formal shirts</a></li>
+        <li><a class="dropdown-item" href="#">Jeans</a></li>
+        <li><a class="dropdown-item" href="#">Trousers</a></li>        
+        <li><a class="dropdown-item" href="#">cargos</a></li>
+        <li><a class="dropdown-item" href="#">Sweatshirts</a></li>
+        <li><a class="dropdown-item" href="#">Kurta</a></li>
+        <li><a class="dropdown-item" href="#">Ethnic set</a></li>
+        </ul>
+    </div>
+    <div class="btn-group"></div>
+        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+       Women
+        </button>
+        <ul class="dropdown-menu" style="width: 200px;">
+            <li><a class="dropdown-item" href="#">Tshirts</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+            <li><a class="dropdown-item" href="#">Jeans</a></li>
+            <li><a class="dropdown-item" href="#">Sarees</a></li>        
+            <li><a class="dropdown-item" href="#">Ethnic set</a></li>
+            <li><a class="dropdown-item" href="#">Sweatshirts</a></li>
+            <li><a class="dropdown-item" href="#">Kurta Set</a></li>
+            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+            <li><a class="dropdown-item" href="#">Lehanga</a></li>
+            <li><a class="dropdown-item" href="#">Dupatta</a></li>
+        </ul>
+    </div>
+    <div class="btn-group"></div>
+        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Baby & Kids
+        </button>
+        <ul class="dropdown-menu" style="width: 200px;">
+            <li><a class="dropdown-item" href="#">Tshirts</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+            <li><a class="dropdown-item" href="#">Jeans</a></li>
+            <li><a class="dropdown-item" href="#">Shorts</a></li>        
+            <li><a class="dropdown-item" href="#">Ethnic set</a></li>
+            <li><a class="dropdown-item" href="#">Sweatshirts</a></li>
+            <li><a class="dropdown-item" href="#">Shirt</a></li>
+            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+            <li><a class="dropdown-item" href="#">Lehanga</a></li>
+            <li><a class="dropdown-item" href="#">Dupatta</a></li>
+        </ul>
+    </div>
+    <div class="btn-group"></div>
+        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Home & Furnitures
+        </button>
+        <ul class="dropdown-menu" style="width: 200px;">
+            <li><a class="dropdown-item" href="#">Pan</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Tawas</a></li> -->
+            <li><a class="dropdown-item" href="#">Pressure Cooker</a></li>
+            <li><a class="dropdown-item" href="#">Kitchen tool</a></li>        
+            <li><a class="dropdown-item" href="#">Dinner set</a></li>
+            <li><a class="dropdown-item" href="#">Bottles</a></li>
+            <li><a class="dropdown-item" href="#">Container Set</a></li>
+            <li><a class="dropdown-item" href="#">sofa</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Bed</a></li> -->
+            <li><a class="dropdown-item" href="#">Matresses</a></li>
+        </ul>
+    </div>
+   
+    <button type="button" class="btn">Flights</button>
+    <button type="button" class="btn">Offer Zone</button>
+
+    <div class="card mb-3" style="max-width: 1140px; border: 1px solid black; box-shadow: 10px 10px 20px 5px grey; margin-top: 20px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="images/tv.jpg" class="img-fluid rounded-start" alt="tv" style="border: 1px solid rgb(224, 224, 224); border-radius: 5px; margin-top: 20px; padding: 10px 10px 30px 10px; margin-left: 5px;" >
+                <div class="col-md-6 custom-width d-grid gap-2 d-flex justify-content-center" style="margin-top: 10px;" >
+                    <button class="cart btn btn-warning" type="button"><i class="bi bi-cart3"></i><a href="http://127.0.0.1:5500/Flipkart/TvCart.html" style="text-decoration: none;color: white;font-size: 15px;font-weight: bold;">ADD TO CART</a></button>
+                    <button class="btn1  btn btn-danger" type="button"><i class="bi bi-lightning"></i>BUY NOW</button>
+                </div>  
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">LG 108.0 cm (42.5197 inch) 4K Ultra HD IPS Panel with WebOS, Smart Monitor (43SQ700S-WB.ATRLMSN)  (Response Time: 5 ms, 60 Hz Refresh Rate)</h5>
+                    <h6 class=" para card-text" style="margin-right: 20px;display: inline;">Special price </h6><p class="d-inline-flex gap-1">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="images/flipkartlogo.png" alt="flipkart Logo" style="display: inline; width: 90px;"></a>
+                      </p>
+                      <div class="collapse" id="collapseExample" style="width: 250px; margin-left: 60px;">
+                        <div class="card card-body">
+                         <h6>Seal of Quality & Speed</h6>
+                         <p><strong>6 Quality Checks</strong><br> You get exactly what you ordered</p>
+                         <p><strong>Fast & Free Shipping </strong><br> Delivery within 2-4 days
+                            Get free shipping on select products.</p>
+                        </div>
+                      </div>
+                    <p class="card-text"> <span style="font-size: 20px;margin-right: 7px;"><strong>Rs.30,099</strong></span> <del> Rs.67,000</del> <span style="color: green; margin-left: 10px;">53% Off</span> </p>
+                    <h5 class="card-text"><small class="text-body-secondary">Available Offers</small></h5>
+                    <ul>
+                        <li><strong>Bank Offer</strong> 10% off up to ₹1,500 on Axis Bank Credit Card (incl. migrated ones) on orders of ₹4,990 and above<a href="">T&C</a>  </li>
+                        <li><strong>Bank Offer</strong> 5% Unlimited Cashback on Flipkart Axis Bank Credit Card.<a href="">T&C</a>   </li>
+                        <li><strong>Bank Offer</strong> 10% off up to ₹1,750 on Axis Bank Credit EMI (incl. migrated ones) on orders of ₹4,990 and above <a href="">T&C </a>   </li>
+                        <li style="margin-bottom: 10px;"><strong>Special Price</strong> Get extra 53% off (price inclusive of cashback/coupon) <a href="">T&C</a>  </li>
+                    </ul>
+                </div>
+
+                
+                <div class=" col-md-8 d-flex align-items-center" style="margin-bottom: 15px;">
+                    <div style="width: 90px; margin-left: 18px;">
+                        <img src="images/LGlogo.svg" class="img-fluid rounded-start" alt="LGlogo">
+                    </div>
+                    <div class="ms-3">
+                        <p class="card-text">1 Year Warranty from the Date of Purchase.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-8" style="margin-bottom: 40px;">
+                    <h4 class="card-text" style="margin-left: 18px;"><small class="text-body-secondary">Highlights</small></h4>
+                        <ul style="margin-left: 18px;">
+                            <li>Panel Type: IPS Panel</li>
+                            <li>Screen Resolution Type: 4K Ultra HD </li>
+                            <li>Brightness: 300 nits</li>
+                            <li>Response Time: 5 ms | Refresh Rate: 60 Hz</li>
+                            <li>7 Days Service Center Replacement/Repair</li>
+                            <li>GST invoice available  </li>
+                        </ul>
+                </div>
+
+                <hr style="border: 1px solid #3a3939; width: 100%; margin: 20px 0;">
+                    <div class="col-md-12 ">
+                        <h3 >Specifications</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">General</h5>
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td colspan="8" class="text-muted">Model Name</td>
+                                    <td  colspan="8">43SQ700S-WB.ATRLMSN  </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Color</td>
+                                    <td  colspan="8">Silver</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Display</td>
+                                    <td  colspan="8">108.0 cm (42.5197 inch) LED Display      </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Panel Type   </td>
+                                    <td  colspan="8">IPS Panel  </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Screen Resolution Type   </td>
+                                    <td  colspan="8">4K Ultra HD   </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Sales Package  </td>
+                                    <td  colspan="8">1 Monitor, DC Extension Cable, HDMI Cable, Remote, User Manual        </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Screen Form Factor    </td>
+                                    <td  colspan="8">Flat </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Display Features    </h5>
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Maximum Refresh Rate    </td>
+                                    <td  colspan="8">60 Hz (Analog), 60 Hz (Digital)   </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Aspect Ratio </td>
+                                    <td  colspan="8">16:09  </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Response Time   </td>
+                                    <td  colspan="8" >5 ms  </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Brightness   </td>
+                                    <td  colspan="8">300 nits (2D)   </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Power Features</h5>
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Power Requirement  </td>
+                                    <td  colspan="8">AC 100 - 240 V, 50/60 Hz </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Warranty </h5>
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Warranty Summary </td>
+                                    <td  colspan="8">3 Years Warranty </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Covered in Warranty </td>
+                                    <td  colspan="8">Manufacturing Defects  </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Not Covered in Warranty  </td>
+                                    <td  colspan="8">Physical and Water Damages  </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"  class="text-muted">Domestic Warranty </td>
+                                    <td  colspan="8">3 Years </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
