@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        .main-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #2874f0;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+        }
+        .btn-orange {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+        }
+        .btn-orange:hover {
+            background-color: #e64a19;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        .advantages {
+            font-size: 0.9rem;
+        }
+        .advantages i {
+            color: #2874f0;
+            margin-right: 5px;
+        }
+        .form-check-label img {
+        vertical-align: middle;
+        margin-right: 10px;
+        }
+        .form-check {
+            padding: 10px;
+            /* border: 1px solid #ddd; */
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .form-check:hover {
+            background-color: #f7f7f7;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            LOGIN OR SIGNUP
+        </div>
+        <div class="p-4">
+            <form>
+                <label for="emailOrMobile" class="form-label">Enter Email/Mobile number</label>
+                <input 
+                    type="text" 
+                    id="emailOrMobile" 
+                    class="form-control mb-3" 
+                    placeholder="Enter your email or mobile number" 
+                    required
+                >
+                <p class="text-muted small">
+                    By continuing, you agree to our 
+                    <a href="#" class="text-primary">Terms of Use</a> and 
+                    <a href="#" class="text-primary">Privacy Policy</a>.
+                </p>
+                <button 
+                    type="button" 
+                    class="btn btn-orange w-100" 
+                    id="continueBtn"
+                >
+                    CONTINUE
+                </button>
+            </form>
+            
+        </div>
+        <div class="accordion mt-4" id="stepsAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="stepOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1. DELIVERY ADDRESS
+                    </button>
+                </h2>
+                <div class="accordion-item">
+                    <!-- <h2 class="accordion-header" id="stepOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            1. DELIVERY ADDRESS
+                        </button>
+                    </h2> -->
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="stepOne" data-bs-parent="#stepsAccordion">
+                        <div class="accordion-body">
+                            <form id="deliveryAddressForm">
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="addressLine1" class="form-label">Address Line 1</label>
+                                    <input type="text" id="addressLine1" class="form-control" placeholder="Enter your address" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="addressLine2" class="form-label">Address Line 2 (Optional)</label>
+                                    <input type="text" id="addressLine2" class="form-control" placeholder="Apartment, etc. (optional)">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" id="city" class="form-control" placeholder="Enter your city" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="state" class="form-label">State</label>
+                                    <input type="text" id="state" class="form-control" placeholder="Enter your state" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="zipCode" class="form-label">Zip Code</label>
+                                    <input type="text" id="zipCode" class="form-control" placeholder="Enter your zip code" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                                    <input type="text" id="phoneNumber" class="form-control" placeholder="Enter your phone number" required>
+                                </div>
+                                <button type="submit" class="btn btn-orange w-100">Save Address</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div class="accordion-item">
+                <h2 class="accordion-header" id="stepTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2. ORDER SUMMARY
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="stepTwo" data-bs-parent="#stepsAccordion">
+                    <div class="accordion-body">
+                        Review the items in your order.
+                    </div>
+                </div>
+            </div> -->
+            <div class="accordion-item">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="stepThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3. PAYMENT OPTIONS
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="stepThree" data-bs-parent="#stepsAccordion">
+                        <div class="accordion-body">
+                            <form id="paymentOptionsForm">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="cod" value="Cash on Delivery" required>
+                                    <label class="form-check-label" for="cod">
+                                        Cash on Delivery
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="phonePe" value="PhonePe" required>
+                                    <label class="form-check-label" for="phonePe">
+                                        <img src="images/phonepe-icon.webp" alt="PhonePe" style="width: 24px; margin-right: 5px;">
+                                        PhonePe
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="gpay" value="Google Pay" required>
+                                    <label class="form-check-label" for="gpay">
+                                        <img src="images/gpay.png" alt="GPay" style="width: 24px; margin-right: 5px;">
+                                        Google Pay
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="upi" value="UPI" required>
+                                    <label class="form-check-label" for="upi">
+                                        <img src="images/upi-twitter.webp" alt="UPI" style="width: 24px; margin-right: 5px;">
+                                        UPI
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-orange w-100"><a href="successful.html" style="text-decoration: none;color: white;">Proceed to Pay</a></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+     document.getElementById("continueBtn").addEventListener("click", function () {
+        const emailOrMobile = document.getElementById("emailOrMobile").value.trim();
+        
+        if (emailOrMobile === "") {
+            // If the field is empty, show an error alert or message
+            alert("Please enter your email or mobile number.");
+        } else {
+            // If the field is filled, proceed to the next step
+            alert("You clicked on Continue! Proceeding to the next steps.");
+        }
+    });
+
+        document.getElementById("deliveryAddressForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const fullName = document.getElementById("fullName").value;
+            const addressLine1 = document.getElementById("addressLine1").value;
+            const addressLine2 = document.getElementById("addressLine2").value;
+            const city = document.getElementById("city").value;
+            const state = document.getElementById("state").value;
+            const zipCode = document.getElementById("zipCode").value;
+            const phoneNumber = document.getElementById("phoneNumber").value;
+    
+            alert(`Address saved succesfully`);
+        });
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

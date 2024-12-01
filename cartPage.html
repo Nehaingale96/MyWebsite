@@ -47,47 +47,47 @@
       
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid bg-primary" style="padding: 10px 10px;">
-          <a class="navbar-brand" style="color: white;">Flipkart</a>
-          <!-- <img src="images/flipkart.png" class="img-thumbnail" alt="flipkart" style="width: 100px; "> -->
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search for Products,Brand & more" aria-label="Search" style="padding: 0px 10px 3px 10px; width: 800px;"  >
-            <i class="bi bi-search" style="margin:0px 30px 0px -40px; background-color: white; padding: 5px 15px 0px 15px; border-radius: 8px; "></i>
-            <button class="btn btn-outline-success" type="submit" style="margin-right: 10px; margin-left:-20px; color: white;">Search</button>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid bg-primary" style="padding: 10px 10px;">
+      <a class="navbar-brand" style="color: white;">EasyMart</a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search for Products,Brand & more" aria-label="Search" style="padding: 0px 10px 3px 10px; width: 750px"  >
+        <i class="bi bi-search" style="margin:0px 30px 0px -40px; background-color: white; padding: 5px 15px 0px 15px; border-radius: 8px; "></i>
+        <button class="btn btn-outline-success navbar-toggler" type="submit" style="margin-right: 5px; margin-left:-20px; color: white;font-size: 17px;">Search</button>
 
-            <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; margin-right: 5px;">
-                  Neha
-                </button>
-                <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button">My Profile</button></li>
-                  <li><button class="dropdown-item" type="button">Supercoin zone</button></li>
-                  <li><button class="dropdown-item" type="button">Flipkart plus zone</button></li>
-                  <li><button class="dropdown-item" type="button">Orders</button></li>
-                  <li><button class="dropdown-item" type="button">Wishlist</button></li>
-                  <li><button class="dropdown-item" type="button">Coupons</button></li>
-                  <li><button class="dropdown-item" type="button">Gift cards</button></li>
-                  <li><button class="dropdown-item" type="button">Notifications</button></li>
-                  <li><button class="dropdown-item" type="button">Logout</button></li>
-                </ul>
-            </div>
-            <button type="button" class="btn" style="color: white;  margin-right: 5px;"><i class="bi bi-cart-dash"></i>Cart</button>
-            <button type="button" class="btn" style="color: white; margin-right: 5px;">Seller</button>
-            <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"  style="margin-right: 70px; color: white;">
-                  Menu
-                </button>
-                <ul class="dropdown-menu" >
-                  <li><button class="dropdown-item" type="button">Notification prefernces</button></li>
-                  <li><button class="dropdown-item" type="button">24 * 7 Customer care</button></li>
-                  <li><button class="dropdown-item" type="button">Advertise </button></li>
-                  <li><button class="dropdown-item" type="button">Download App</button></li>
-                </ul>
-            </div>
-          </form>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              Neha
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button">My Profile</button></li>
+              <li><button class="dropdown-item" type="button">Supercoin zone</button></li>
+              <li><button class="dropdown-item" type="button">Flipkart plus zone</button></li>
+              <li><button class="dropdown-item" type="button">Orders</button></li>
+              <li><button class="dropdown-item" type="button">Wishlist</button></li>
+              <li><button class="dropdown-item" type="button">Coupons</button></li>
+              <li><button class="dropdown-item" type="button">Gift cards</button></li>
+              <li><button class="dropdown-item" type="button">Notifications</button></li>
+              <li><button class="dropdown-item" type="button">Logout</button></li>
+            </ul>
         </div>
-    </nav>   
+        <button type="button" class="btn" style="color: white; "><i class="bi bi-cart-dash"></i>Cart</button>
+        <button type="button" class="btn" style="color: white;">Seller</button>
+        <div class="dropdown"></div>
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"  style="margin-right: 70px; color: white;">
+              Menu
+            </button>
+            <ul class="dropdown-menu" >
+              <li><button class="dropdown-item" type="button">Notification prefernces</button></li>
+              <li><button class="dropdown-item" type="button">24 * 7 Customer care</button></li>
+              <li><button class="dropdown-item" type="button">Advertise </button></li>
+              <li><button class="dropdown-item" type="button">Download App</button></li>
+            </ul>
+        </div>
+      </form>
+    </div>
+</nav>   
+
 
     <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups" style="width:600px; margin: 20px auto; border: 1px solid black; padding: 20px 10px;">
       <div class="input-group">
@@ -111,6 +111,10 @@
                   <h5 class="card-title"><a href="http://127.0.0.1:5500/Flipkart/noise.html">Noise Buds VS102 with 50 Hrs Playtime...</a></h5>
                   <p>Delivery by Sat, Oct 26 | <span style="color: green;" ><del>RS.40</del> Free</span></p>
                   <h6 class=" para card-text" style="display: inline; margin-right: 20px;">Seller : RetailNet </h6>
+                  <p class="d-inline-flex gap-1">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <img src="images/EZ Mart.png" alt="flipkart Logo" style="display: inline; width: 70px;margin-bottom: 0;"></a>
+                  </p>
                   <div>
                       <p class="card-text" style="margin-bottom: 10px;">
                         <span id="price" style="font-size: 20px; margin-right:7px ;"><strong>Rs.899</strong></span>
@@ -128,9 +132,8 @@
                   </div>
                   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button id="place-order-btn" class="btn me-md-2" type="button" 
-                        style="background-color:rgb(233, 109, 60); color: white; font-weight: bold; padding: 8px 45px 8px 45px;" 
-                        onclick="placeOrder()">
-                        Place Order
+                        style="background-color:rgb(233, 109, 60); color: white; font-weight: bold; padding: 8px 45px 8px 45px;" >
+                        <a href="Login.html" style="text-decoration: none;color: white;">Place Order</a>
                     </button>
                 </div>
               </div>
